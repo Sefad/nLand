@@ -145,6 +145,7 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 650px;
   }
   .companies .container .buttons .btn {
     margin-bottom: 15px;

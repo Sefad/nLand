@@ -1,3 +1,10 @@
+<?php
+  $title = $_GET['utm_campaign'];
+  $campaign = explode("|", $title);
+
+  if($campaign[1] == 'prodazha_poisk_msk') {$title_text = 'Купить акции в москве';}
+  else{$title_text = 'Инвестиции в акции крупнейших компаний мира ';}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
@@ -130,7 +137,7 @@
 			<div class='container'>
 				<a style='    position: absolute;top: 160px;' id='main'></a>
 				<div class='title'>
-					Инвестиции в акции крупнейших компаний мира
+					<?php echo $title_text; ?>
 				</div>
 				<div class='shares'>
 					<img class='f_fir' src="imgs/seventh_i7.png" alt="">
