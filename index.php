@@ -2,7 +2,7 @@
   $title = $_GET['utm_campaign'];
   $campaign = explode("|", $title);
 
-  if($campaign[1] == 'prodazha_poisk_msk') {$title_text = 'Купить акции в москве';}
+  if($campaign[1] == 'TESTTEST') {$title_text = 'Купить акции в москве';}
   else{$title_text = 'Инвестиции в акции крупнейших компаний мира ';}
 ?>
 <!DOCTYPE html>
