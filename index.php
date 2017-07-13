@@ -1,9 +1,65 @@
 <?php
   $title = $_GET['utm_campaign'];
   $campaign = explode("|", $title);
+  $title_text = 'Инвестиции в акции крупнейших компаний мира';
+  $subtitle_text1 = 'Инвестиционные портфели с доходностью до 18,4% за квартал.';
+  $subtitle_text2 = 'Покупка акций, консультационная поддержка.';
+  $cta = 'Список рекомендованных к покупке акций';
+  $form_text1 = 'Получите список рекомендованных к<br/>покупке акций';
+  $form_text2 = 'Оставьте ваши контактные данные, и мы отправим вам список акций на указанный адрес электронной почты';
+  $form_button = 'Получить';
 
-  if($campaign[1] == 'TESTTEST') {$title_text = 'Купить акции в москве';}
-  else{$title_text = 'Инвестиции в акции крупнейших компаний мира ';}
+  if ($campaign[1] === 'poisk_obuchenie_msk' || $campaign[1] === 'poisk_obuchenie_rf') {
+    $title_text = 'Научим зарабатывать на акциях крупнейших компаний мира';
+    $subtitle_text1 = 'Поможем купить акции, проконсультируем на всех этапах';
+    $subtitle_text2 = 'Наши клиенты получают до 18,4% доходности за квартал';
+    $cta = 'Персональные советы по покупке акций';
+    $form_text1 = 'Получите персональные советы по покупке акций';
+    $form_text2 = 'Оставьте ваши контактные данные, и мы свяжемся с вами в ближайшее время';
+  } else if ($campaign[1] == 'poisk_prognozy_msk' || $campaign[1] == 'poisk_prognozy_rf') {
+    $title_text = 'Прогнозы по акциям крупнейших компаний мира';
+    $subtitle_text1 = 'Мы стали обладателями премии «Золотой Феникс 2017»';
+    $subtitle_text2 = 'в номинации «Самые точные прогнозы»';
+  } else if ($campaign[1] == 'poisk_stoimost_msk' || $campaign[1] == 'poisk_stoimost_rf' || $campaign[1] == 'poisk_stoimost2_msk' || $campaign[1] == 'poisk_stoimost2_rf') {
+    $title_text = 'Узнайте стоимость акций крупнейших компаний мира';
+    $subtitle_text1 = 'Покупка акций стоимостью от 1 доллара';
+    $subtitle_text2 = 'Портфели акций с доходностью до 18,4% за квартал';
+    $cta = 'Стоимость самых доходных акций';
+    $form_text1 = 'Узнайте стоимость самых доходных акций';
+    $form_text2 = 'Оставьте ваши контактные данные, и мы отправим вам список акций на указанный адрес электронной почты';
+    $form_button = 'Отправить';
+  } else if ($campaign[1] == 'poisk_portfel_msk' || $campaign[1] == 'poisk_portfel_rf') {
+    $title_text = 'Инвестиционные портфели с доходностью до 18,4% за квартал ';
+    $subtitle_text1 = 'Сформируем портфель из акций крупнейших компаний мира';
+    $subtitle_text2 = 'Поможем в управлении инвестиционным портфелем';
+    $cta = 'Доходность наших портфелей';
+    $form_text1 = 'Узнайте доходность и структуру наших инвестиционных портфелей';
+    $form_text2 = 'Оставьте ваши контактные данные, и мы свяжемся с вами в ближайшее время';
+    $form_button = 'Отправить';
+  } else if ($campaign[1] == 'poisk_info_msk' || $campaign[1] == 'poisk_info_rf') {
+    $title_text = 'Поможем купить акции крупнейших компаний мира';
+    $subtitle_text1 = 'Сформируем доходную инвестиционную стратегию, подберём надёжного брокера';
+    $subtitle_text2 = 'Поможем собрать документы';
+    $cta = 'С чего начать? ';
+    $form_text1 = 'Получите бесплатную консультацию по телефону';
+    $form_text2 = 'Оставьте ваши контактные данные, и мы свяжемся с вами в ближайшее время';
+    $form_button = 'Отправить';
+  } else if ($campaign[1] == 'broker_poisk_msk' || $campaign[1] == 'broker_poisk_rf') {
+    $title_text = 'broker_poisk_msk';
+    $subtitle_text1 = 'Получите прямой доступ к 14 фондовым биржам мира.';
+    $subtitle_text2 = 'Торгуйте акциями компаний России, Европы и США';
+  } else if ($campaign[1] == 'prodazha_poisk_msk' || $campaign[1] == 'prodazha_poisk_rf') {
+    $title_text = 'Покупка и продажа акций крупнейших компаний мира';
+    $subtitle_text1 = 'Торгуйте акциями 1000 компаний России, США и Европы.';
+    $subtitle_text2 = 'Пользуйтесь профессиональной аналитикой и консультационной поддержкой';
+  } else if ($campaign[1] == 'zarabotok_poisk_msk' || $campaign[1] == 'zarabotok_poisk_msk_poisk_rf') {
+    $title_text = 'Зарабатывайте в интернете. Инвестируйте в акции компаний';
+    $subtitle_text1 = 'Управляйте инвестиционным счётом из любой точки мира.';
+    $subtitle_text2 = 'Тратьте не более 15 минут в день. Зарабатывайте до 18,4% за квартал ';
+    $cta = 'Узнать больше об инвестициях в акции';
+    $form_text1 = 'Получите бесплатную консультацию по телефону';
+    $form_text2 = 'Оставьте ваши контактные данные, и мы свяжемся с вами в ближайшее время';
+  }
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -147,12 +203,12 @@
 					<img class='f_fiv' src="imgs/seventh_i2.png" alt="">
 				</div>
 				<div class='subtext'>
-					<p>Инвестиционные портфели с доходностью до 18,4% за квартал.</p>
-					<p>Покупка акций, консультационная поддержка.</p>
+					<p><?php echo $subtitle_text1; ?></p>
+					<p><?php echo $subtitle_text2; ?></p>
 				</div>
 				<div class='buttons'>
-					<a href="#" class="btn btn-get open-form" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="list_shares_first_block">
-					<span>Список рекомендованных к покупке акций</span><br>
+					<a href="#" class="btn btn-get open-formZero" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="list_shares_first_block">
+					<span><?php echo $cta; ?></span><br>
 				</a>
 					<div class='videoBlock'>
 						<img src='imgs/play_b.png' alt="">
@@ -986,7 +1042,7 @@
 							</div>
 							<div class='yearprofit'>
 								<div class='number'>
-									250
+									2500
 								</div>
 								<div class='postfix'>
 									прибыли<br/>за квартал
@@ -1300,6 +1356,33 @@
 				<iframe style='margin-right: 50px; box-shadow: 0px 0px 11px 10px rgba(20, 20, 20, .6);' width="900" height="500" src="https://www.youtube.com/embed/p1Od-V4yWCs" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
+		<div class='modal-form' id="modal-form">
+      <div class="form-wrap">
+        <p class="form-title"><?php echo $form_text1; ?></p>
+        <p class="form-info"><?php echo $form_text2; ?></p>
+        <form >
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Как к Вам обращаться?" required>
+          </div>
+          <div class="form-row">
+            <input type="text" id='phone' name="phone" placeholder="Ваш телефон: 8 (XXX) XXX-XXXX" required>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Ваш email" required>
+          </div>
+          <div class="confidens text-center">
+            <a href="#" >* информация, оставленная Вами, не будет передана третьим лицам согласно ФЗ №152 "О персональных данных"</a>
+          </div>
+          <!-- <div class="form-row">
+            <input type="text" name="email" placeholder="Ваш E-Mail">
+          </div> -->
+          <div class="form-row text-center">
+            <input type="submit" value="Получить" class="btn btn-blue">
+          </div>
+          <input type="hidden" name="yam" value="<?php print $form_button;?>">
+        </form>
+      </div>
+    </div>
 		<div class='modal-form' id="modal-formOne">
 			<div class="form-wrap">
 				<p class="form-title">Получите список рекомендованных к<br/>покупке акций</p>
@@ -1323,7 +1406,7 @@
 					<div class="form-row text-center">
 						<input type="submit" value="Получить" class="btn btn-blue">
 					</div>
-					<input type="hidden" name="yam" value="">
+					<input type="hidden" name="yam" value="Получить">
 				</form>
 			</div>
 		</div>

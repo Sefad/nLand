@@ -1,5 +1,8 @@
 $(document).ready(function() {
   jQuery(function($){
+    $("#modal-form #phone").mask("8 (999) 999-9999");
+  });
+  jQuery(function($){
     $("#modal-formOne #phone").mask("8 (999) 999-9999");
   });
 	jQuery(function($){
@@ -56,6 +59,16 @@ $(document).ready(function() {
 		dots: true,
 		adaptiveHeight: true
 	});
+  $('a.open-formZero').click(function(e){
+    var yam = $(this).data('yam');
+    e.preventDefault();
+    $.fancybox({
+      content: $('#modal-form'),
+      afterShow:function(){
+        $('#modal-form input[name="yam"]').val(yam)
+      }
+    });
+  })
 	$('a.open-form').click(function(e){
 		var yam = $(this).data('yam');
 		e.preventDefault();
