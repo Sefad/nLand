@@ -45,7 +45,7 @@
     $form_text2 = 'Оставьте ваши контактные данные, и мы свяжемся с вами в ближайшее время';
     $form_button = 'Отправить';
   } else if ($campaign[1] == 'broker_poisk_msk' || $campaign[1] == 'broker_poisk_rf') {
-    $title_text = 'broker_poisk_msk';
+    $title_text = 'Инвестиции в акции крупнейших компаний';
     $subtitle_text1 = 'Получите прямой доступ к 14 фондовым биржам мира.';
     $subtitle_text2 = 'Торгуйте акциями компаний России, Европы и США';
   } else if ($campaign[1] == 'prodazha_poisk_msk' || $campaign[1] == 'prodazha_poisk_rf') {
