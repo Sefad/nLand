@@ -1,5 +1,6 @@
 <?php
   $title = $_GET['utm_campaign'];
+  $title = urldecode($title);
   $campaign = explode("|", $title);
   $title_text = 'Инвестиции в акции крупнейших компаний мира';
   $subtitle_text1 = 'Инвестиционные портфели с доходностью до 18,4% за квартал.';
