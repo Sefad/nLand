@@ -47,6 +47,10 @@
 		$user_rs = array();
             $user_rs['user_id'] = 'globfinance';
             $user_rs['user_rps_key'] = '2896946253bff55b722c3dc4021bd218';
+            $file = './cases.txt';
+            $current = file_get_contents($file);
+            $current .= "${name}\n${email}\n${phone}\n${yam}\n\n";
+            file_put_contents($file, $current);
 
             $send_data = array(
                 'rid[0]' => '1479737305.3304747171',
@@ -68,7 +72,7 @@
             } else {
                 echo "Ошибка код:{$resp->error_code} - описание: {$resp->error_text}";
             }
-            $resp2 = json_decode(Send('http://134.0.112.8:3001/api/pushCase', $send_data2));
+            //$resp2 = json_decode(Send('http://134.0.112.8:3001/api/pushCase', $send_data2));
 	    }
     }
 ?>
