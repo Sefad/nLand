@@ -72,7 +72,7 @@
             } else {
                 echo "Ошибка код:{$resp->error_code} - описание: {$resp->error_text}";
             }
-            //$resp2 = json_decode(Send('http://134.0.112.8:3001/api/pushCase', $send_data2));
+            $resp2 = json_decode(Send('https://glob-finance.ru/api/pushCase', $send_data2));
 	    }
     }
 ?>
