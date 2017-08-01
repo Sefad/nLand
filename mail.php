@@ -63,7 +63,8 @@
                 'name' => $name,
                 'email' => $email,
                 'phone' => $phone,
-                'tag' => $yam
+                'jcgroup' => 'Glob finance',
+                'source' => 'context'
             );
             $send_data['hash'] = GetHash($send_data, $user_rs);
             $resp = json_decode(Send('http://globfinance.justclick.ru/api/AddLeadToGroup', $send_data));
