@@ -68,7 +68,7 @@
             );
             $send_data['hash'] = GetHash($send_data, $user_rs);
             $resp = json_decode(Send('http://globfinance.justclick.ru/api/AddLeadToGroup', $send_data));
-            if($resp->error_code == 0) {
+            if($resp->error_code === 0) {
                 $resp2 = json_decode(Send('https://glob-finance.ru/api/pushCase', $send_data2));
                 echo "<script>yaCounter44006659.reachGoal('getLid');</script><div style='text-align:center'>Спасибо!<br/>Мы выслали вам список самых доходных акций второго квартала 2017 года на указанный адрес электронной почты.</div><script>ga('send', {hitType: 'event',eventAction: 'getLid'});</script>";
             } else {
