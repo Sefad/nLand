@@ -68,9 +68,11 @@
             );
             $send_data['hash'] = GetHash($send_data, $user_rs);
             $resp = json_decode(Send('http://globfinance.justclick.ru/api/AddLeadToGroup', $send_data));
-            if($resp->error_code === 0) {
+            if($resp->error_code === 0 && $resp->error_text === 'OK') {
                 $resp2 = json_decode(Send('https://glob-finance.ru/api/pushCase', $send_data2));
                 echo "<script>yaCounter44006659.reachGoal('getLid');</script><div style='text-align:center'>Спасибо!<br/>Мы выслали вам список самых доходных акций второго квартала 2017 года на указанный адрес электронной почты.</div><script>ga('send', {hitType: 'event',eventAction: 'getLid'});</script>";
+            } else if ($resp->error_code === 0 && $resp->error_text === 'The subscriber is already registered') {
+                 echo "<div style='text-align:center'>Данный e-mail уже использовался.<br/>В случае ошибки позвоните на бесплатный номер 8 (800) 707-51-70.</div>";
             } else {
                 echo "Ошибка код:{$resp->error_code} - описание: {$resp->error_text}";
             }
