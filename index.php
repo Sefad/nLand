@@ -162,7 +162,7 @@
 			<a href="#home" class='logo'>
 				<img src="imgs/logo_glob_big.png" alt="">
 			</a>
-			<a href="#" class="order-call open-formTwo" data-yam="ask_call" data-title="Получить консультацию">Заказать звонок</a>
+			<a href="#" class="order-call open-formTwo" data-yam="ask_call" data-title="Получить консультацию" data-tag="заказать_обратный_звонок">Заказать звонок</a>
 		</header>
 		<header class='desctop'>
 			<div class="container clearfix">
@@ -186,7 +186,7 @@
 						<div class='timeTel'>Пн-Пт 10.00 до 19.00</div>
 						<div class="phone">8 (800) 707-51-70</div>
 					</div>
-					<a href="#" class="btn open-formTwo" data-yam="ask_call" data-title="Получить консультацию"><span>Заказать звонок</span></a>
+					<a href="#" class="btn open-formTwo" data-yam="ask_call" data-title="Получить консультацию" data-tag="заказать_обратный_звонок"><span>Заказать звонок</span></a>
 				</div>
 			</div>
 		</header>
@@ -208,7 +208,7 @@
 					<p><?php echo $subtitle_text2; ?></p>
 				</div>
 				<div class='buttons'>
-					<a href="#" class="btn btn-get open-formZero" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="list_shares_first_block">
+					<a href="#" class="btn btn-get open-formZero" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-tag="список_10_доходных_акций_главная" data-yam="list_shares_first_block">
 					<span><?php echo $cta; ?></span><br>
 				</a>
 					<div class='videoBlock'>
@@ -574,7 +574,7 @@
 				<div class='title'>
 					В акции каких компаний нужно инвестировать сегодня?
 				</div>
-				<a href="#" class="btn btn-get open-form" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="list_shares_fouth_block">
+				<a href="#" class="btn btn-get open-form" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-tag="список_10_доходных_акций_во_что_инвестировать_сегодня" data-yam="list_shares_fouth_block">
 					<span>Список рекомендованных к покупке акций</span><br>
 				</a>
 				<div class='pilitics'>
@@ -661,7 +661,7 @@
 				<div class='subtext'>
 					Получите акции, на которых вы сможете заработать сегодня
 				</div>
-				<a href="#" class="btn btn-get open-form" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="list_shares_sixth_block">
+				<a href="#" class="btn btn-get open-form" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-tag="список_10_доходных_акций_самые_состоятельные_люди_мира_инвестируют_в_какие" data-yam="list_shares_sixth_block">
 					<span>Список рекомендованных к покупке акций</span><br>
 				</a>
 				<div class='pilitics'>
@@ -863,6 +863,7 @@
 					<div class="form-row">
 						<input type="text" valida id='phone' name="phone" placeholder="Ваш номер телефона" required>
 					</div>
+					<input type="hidden" name="tag" value="какие_акции_входят_в_актуальный_портфель">
 					<div class="form-row text-center">
 						<input type="submit" value="Узнать" class="btn btn-blue">
 					</div>
@@ -986,7 +987,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="btn btn-get open-formEight" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="i_want_port_likeThis">
+					<a href="#" class="btn btn-get open-formEight" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-tag="как_формируется_инвестиционный_портфель_пример_дохода_13,78_процентов" data-yam="i_want_port_likeThis">
 						<span>Хочу такой результат</span><br>
 					</a>
 					<div class='pilitics nophone'>
@@ -1082,7 +1083,7 @@
 							<div class='text'>
 								Узнайте какие акции входят в портфель
 							</div>
-							<a href="#" class="btn btn-get open-formFive" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="share_cons">
+							<a href="#" class="btn btn-get open-formFive" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-tag="типы_портфелей_подробно_консервативный_портфель" data-yam="share_cons">
 								<span>Подробнее о портфеле</span><br>
 							</a>
 						</div>
@@ -1156,7 +1157,7 @@
 							<div class='text'>
 								Узнайте какие акции входят в портфель
 							</div>
-							<a href="#" class="btn btn-get open-formSix" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="share_balance">
+							<a href="#" class="btn btn-get open-formSix" data-tag="типы_портфелей_подробно_сбалансированный_портфель" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="share_balance">
 								<span>Подробнее о портфеле</span><br>
 							</a>
 						</div>
@@ -1230,7 +1231,7 @@
 							<div class='text'>
 								Узнайте какие акции входят в портфель
 							</div>
-							<a href="#" class="btn btn-get open-formSeven" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="share_progressive">
+							<a href="#" class="btn btn-get open-formSeven" data-tag="типы_портфелей_подробно_прогрессивный_портфель" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="share_progressive">
 								<span>Подробнее о портфеле</span><br>
 							</a>
 						</div>
@@ -1246,7 +1247,7 @@
 						<p>Не нашли ничего подходящего?</p>
 						<p>Наш специалист поможет вам!</p>
 					</div>
-					<a href="#" class="btn btn-get open-formFour" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="get_individual_portfolio">
+					<a href="#" class="btn btn-get open-formFour" data-tag="сформировать_индивидуальный_портфель_акций" data-title="ПОЛУЧИТЕ СПИСОК 10 ВЫСОКОДОХОДНЫХ АКЦИЙ" data-yam="get_individual_portfolio">
 						<img src="imgs/ten_isix.png" alt="">
 						<span>Подобрать индивидуальный портфель</span><br>
 					</a>
@@ -1291,7 +1292,7 @@
 							<p>Фото нашего офиса</p>
 						</div>
 					</div>
-					<a href="#" class="order-call open-formTwo" data-yam="ask_call" data-title="Получить консультацию">Заказать обратный звонок</a>
+					<a href="#" class="order-call open-formTwo" data-yam="ask_call" data-tag="заказ_обратный_звонок_по_инвестициям_в_акции" data-title="Получить консультацию">Заказать обратный звонок</a>
 					<a target="_blank" href='https://yandex.ru/maps/213/moscow/?um=constructor%3AucWNGJyaqYNcXvtDRfegOwomxlKOHD3p&source=constructorLink&mode=routes&ll=37.539295%2C55.748430&z=16&rtext=~55.748299%2C37.540318&rtt=auto' class='getWay'>
 						Проложить маршрут...
 					</a>
@@ -1377,6 +1378,7 @@
           <!-- <div class="form-row">
             <input type="text" name="email" placeholder="Ваш E-Mail">
           </div> -->
+          <input type="hidden" name="tag" value="">
           <div class="form-row text-center">
             <input type="submit" value="Получить" class="btn btn-blue">
           </div>
@@ -1404,6 +1406,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Получить" class="btn btn-blue">
 					</div>
@@ -1431,6 +1434,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Заказать" class="btn btn-blue">
 					</div>
@@ -1458,6 +1462,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Отправить" class="btn btn-blue">
 					</div>
@@ -1485,6 +1490,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Отправить" class="btn btn-blue">
 					</div>
@@ -1512,6 +1518,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Узнать" class="btn btn-blue">
 					</div>
@@ -1539,6 +1546,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Узнать" class="btn btn-blue">
 					</div>
@@ -1566,6 +1574,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Узнать" class="btn btn-blue">
 					</div>
@@ -1593,6 +1602,7 @@
 					<!-- <div class="form-row">
 						<input type="text" name="email" placeholder="Ваш E-Mail">
 					</div> -->
+					<input type="hidden" name="tag" value="">
 					<div class="form-row text-center">
 						<input type="submit" value="Получить" class="btn btn-blue">
 					</div>

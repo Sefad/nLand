@@ -28,6 +28,7 @@
 		$phone = trim($_POST['phone']);
 		$email = htmlspecialchars(trim($_POST['email']));
 		$yam = htmlspecialchars(trim($_POST['yam']));
+		$tag = htmlspecialchars(trim($_POST['tag']));
 		if($name == '' || strlen($name) < 2) {
 			$error['name'] = "Введите имя!";
 		};
@@ -59,12 +60,14 @@
                 'lead_phone' => $phone,
                 'tag' => $yam
             );
+            echo $tag;
             $send_data2 = array(
                 'name' => $name,
                 'email' => $email,
                 'phone' => $phone,
                 'jcgroup' => 'Glob finance',
-                'source' => 'context'
+                'tag' => $tag,
+                'source' => 'global-finance.group'
             );
             $send_data['hash'] = GetHash($send_data, $user_rs);
             $resp = json_decode(Send('http://globfinance.justclick.ru/api/AddLeadToGroup', $send_data));

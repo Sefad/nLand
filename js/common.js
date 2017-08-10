@@ -61,126 +61,159 @@ $(document).ready(function() {
 	});
   $('a.open-formZero').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-form'),
       afterShow:function(){
-        $('#modal-form input[name="yam"]').val(yam)
+        $('#modal-form input[name="yam"]').val(yam);
+        $('#modal-form input[name="tag"]').val(tag);
       }
     });
   })
 	$('a.open-form').click(function(e){
 		var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
 		e.preventDefault();
 		$.fancybox({
 			content: $('#modal-formOne'),
 			afterShow:function(){
-				$('#modal-formOne input[name="yam"]').val(yam)
+				$('#modal-formOne input[name="yam"]').val(yam);
+        $('#modal-formOne input[name="tag"]').val(tag);
 			}
 		});
 	})
   $('a.open-formTwo').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
+    console.log(tag);
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formTwo'),
       afterShow:function(){
-        $('#modal-formTwo input[name="yam"]').val(yam)
+        $('#modal-formTwo input[name="yam"]').val(yam);
+        $('#modal-formTwo input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formThree').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formThree'),
       afterShow:function(){
-        $('#modal-formThree input[name="yam"]').val(yam)
+        $('#modal-formThree input[name="yam"]').val(yam);
+        $('#modal-formThree input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formThree').click(function(e){
     var yam = $(this).data('yam');
+    var tag = 'акция_конкретной_компании_';
     if (yam === 'get_share_netflix') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях NETFLIX');
+      tag += 'NETFLIX';
     } else if (yam === 'get_share_facebook') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях FACEBOOK');
+      tag += 'FACEBOOK';
     } else if (yam === 'get_share_amazon') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях AMAZON');
+      tag += 'AMAZON';
     } else if (yam === 'get_share_tesla') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях TESLA');
+      tag += 'TESLA';
     } else if (yam === 'get_share_apple') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях APPLE');
+      tag += 'APPLE';
     } else if (yam === 'get_share_microsoft') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях MICROSOFT');
+      tag += 'MICROSOFT';
     } else if (yam === 'get_share_google') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях GOOGLE');
+      tag += 'GOOGLE';
     } else if (yam === 'get_share_disney') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях DISNAY');
+      tag += 'DISNAY';
     } else if (yam === 'get_share_boa') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях BANK OF AMERICA');
+      tag += 'BANK_OF_AMERICA';
     } else if (yam === 'get_share_intel') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях INTEL');
+      tag += 'INTEL';
     } else if (yam === 'get_share_boeing') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях BOEING');
+      tag += 'BOEING';
     } else if (yam === 'get_share_nvidia') {
       $('#modal-formThree .form-title').html('Узнайте, сколько можно заработать на акциях NVIDIA');
+      tag += 'NVIDIA';
     }
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formThree'),
       afterShow:function(){
-        $('#modal-formThree input[name="yam"]').val(yam)
+        $('#modal-formThree input[name="yam"]').val(yam);
+        $('#modal-formThree input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formFour').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formFour'),
       afterShow:function(){
-        $('#modal-formFour input[name="yam"]').val(yam)
+        $('#modal-formFour input[name="yam"]').val(yam);
+        $('#modal-formFour input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formFive').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formFive'),
       afterShow:function(){
-        $('#modal-formFive input[name="yam"]').val(yam)
+        $('#modal-formFive input[name="yam"]').val(yam);
+        $('#modal-formFive input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formSix').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formSix'),
       afterShow:function(){
-        $('#modal-formSix input[name="yam"]').val(yam)
+        $('#modal-formSix input[name="yam"]').val(yam);
+        $('#modal-formSix input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formSeven').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formSeven'),
       afterShow:function(){
-        $('#modal-formSeven input[name="yam"]').val(yam)
+        $('#modal-formSeven input[name="yam"]').val(yam);
+        $('#modal-formSeven input[name="tag"]').val(tag);
       }
     });
   })
   $('a.open-formEight').click(function(e){
     var yam = $(this).data('yam');
+    var tag = $(this).data('tag');
     e.preventDefault();
     $.fancybox({
       content: $('#modal-formEight'),
       afterShow:function(){
-        $('#modal-formEight input[name="yam"]').val(yam)
+        $('#modal-formEight input[name="yam"]').val(yam);
+        $('#modal-formEight input[name="tag"]').val(tag);
       }
     });
   })
