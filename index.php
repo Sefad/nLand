@@ -91,41 +91,16 @@
 	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="js/msk.js"></script>
-	<script type="text/javascript"
-		src="https://www.googleadservices.com/pagead/conversion_async.js">
-	</script>
-	<script type="text/javascript">
-    goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 873160460;
-      w.google_conversion_label = "fHhSCNi-hnAQjL6toAM";
-      w.google_remarketing_only = false;
-    }
-    // DO NOT CHANGE THE CODE BELOW.
-    goog_report_conversion = function(url) {
-			goog_snippet_vars();
-			window.google_conversion_format = "3";
-			var opt = new Object();
-			opt.onload_callback = function() {
-				if (typeof(url) != 'undefined') {
-					window.location = url;
-				}
-			}
-			var conv_handler = window['google_trackConversion'];
-			if (typeof(conv_handler) == 'function') {
-				conv_handler(opt);
-			}
-		}
-	</script>
 	<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-88498432-3', 'auto');
+
+    ga('create', 'UA-105235127-1', 'auto');
+    ga('require', 'displayfeatures');
     ga('send', 'pageview');
-	</script>
-	<!-- CallBackHunter Code -->
+  </script>
 
 </head>
 <body>

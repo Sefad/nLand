@@ -301,7 +301,8 @@ $(document).ready(function() {
           $.fancybox({
             content:data,
             afterClose:function(){
-              $('input[name="yam"]',$this_form).val('')
+              $('input[name="yam"]',$this_form).val('');
+              $('input[name="tag"]',$this_form).val('')
             }
           })
           setTimeout(function(){
